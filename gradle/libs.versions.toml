@@ -1,0 +1,15 @@
+[versions]
+kotlin-plugin = "2.0.0"
+apollo = "4.0.0-beta.7"
+compose = "1.5.1"
+android-plugin = "8.2.2"
+
+[libraries]
+librarian = "com.gradleup.librarian:core:0.0.2"
+kgp = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin-plugin" }
+android-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "android-plugin" }
+apollo-runtime = { group = "com.apollographql.apollo3", name = "apollo-runtime", version.ref = "apollo" }
+apollo-normalized-cache = { group = "com.apollographql.apollo3", name = "apollo-normalized-cache", version.ref = "apollo" }
+compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "compose" }
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+kotlin-plugin-compose = { group = "org.jetbrains.kotlin", name = "compose-compiler-gradle-plugin", version.ref = "kotlin-plugin" }
