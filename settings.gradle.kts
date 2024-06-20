@@ -7,4 +7,4 @@ pluginManagement {
 
 includeBuild("build-logic")
 
-include("compose-support")
+include("compose-support", "compose-paging-support")

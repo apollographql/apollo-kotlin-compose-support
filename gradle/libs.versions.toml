@@ -1,7 +1,7 @@
 [versions]
 kotlin-plugin = "2.0.0"
 apollo = "4.0.0-beta.7"
-compose = "1.5.1"
+compose = "1.6.8"
 android-plugin = "8.2.2"
 
 [libraries]
@@ -13,3 +13,4 @@ apollo-normalized-cache = { group = "com.apollographql.apollo3", name = "apollo-
 compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "compose" }
 compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
 kotlin-plugin-compose = { group = "org.jetbrains.kotlin", name = "compose-compiler-gradle-plugin", version.ref = "kotlin-plugin" }
+androidx-paging-compose = "androidx.paging:paging-compose:1.0.0-alpha20"
