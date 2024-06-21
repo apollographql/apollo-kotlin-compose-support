@@ -1,3 +1,4 @@
+import com.android.build.gradle.tasks.SourceJarTask
 import com.gradleup.librarian.core.librarianModule
 
 plugins {
@@ -29,4 +30,16 @@ dependencies {
   api(libs.compose.runtime)
   api(libs.apollo.runtime)
   api(libs.apollo.normalized.cache)
+}
+
+// TODO remove when https://github.com/GradleUp/librarian/pull/21 is merged
+extensions.getByType(PublishingExtension::class.java).apply {
+  publications.register("default", MavenPublication::class.java) {
+    afterEvaluate {
+      this@register.from(components.getByName("release"))
+    }
+  }
+}
+tasks.withType(SourceJarTask::class.java) {
+  dependsOn("librarianGenerateVersion")
 }
