@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":compose-support/debug":[],":compose-support/main":[],":compose-support/release":[],":compose-paging-support/debug":[],":compose-paging-support/main":[],":compose-paging-support/release":[]}'

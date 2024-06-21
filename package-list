@@ -1,0 +1,7 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:compose-paging-support
+com.apollographql.compose.paging
+module:compose-support
+com.apollographql.compose
