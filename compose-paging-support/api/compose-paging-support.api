@@ -2,7 +2,7 @@ public final class com/apollographql/compose/paging/ApolloPagingSource : android
 	public static final field $stable I
 	public fun <init> (Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;)V
 	public synthetic fun <init> (Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public fun getRefreshKey (Landroidx/paging/PagingState;)Lcom/apollographql/apollo3/ApolloCall;
+	public fun getRefreshKey (Landroidx/paging/PagingState;)Lcom/apollographql/apollo/ApolloCall;
 	public synthetic fun getRefreshKey (Landroidx/paging/PagingState;)Ljava/lang/Object;
 	public fun load (Landroidx/paging/PagingSource$LoadParams;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
