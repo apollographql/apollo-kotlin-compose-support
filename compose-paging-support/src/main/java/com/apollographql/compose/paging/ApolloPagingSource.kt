@@ -8,10 +8,10 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
-import com.apollographql.apollo3.ApolloCall
-import com.apollographql.apollo3.annotations.ApolloExperimental
-import com.apollographql.apollo3.api.ApolloResponse
-import com.apollographql.apollo3.api.Operation
+import com.apollographql.apollo.ApolloCall
+import com.apollographql.apollo.annotations.ApolloExperimental
+import com.apollographql.apollo.api.ApolloResponse
+import com.apollographql.apollo.api.Operation
 
 @ApolloExperimental
 class ApolloPagingSource<Data : Operation.Data, Value : Any>(
