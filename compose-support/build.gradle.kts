@@ -1,5 +1,4 @@
-import com.android.build.gradle.tasks.SourceJarTask
-import com.gradleup.librarian.core.librarianModule
+import com.gradleup.librarian.gradle.librarianModule
 
 plugins {
   id("com.android.library")
@@ -7,7 +6,7 @@ plugins {
   id("org.jetbrains.kotlin.plugin.compose")
 }
 
-librarianModule()
+librarianModule(true)
 
 android {
   namespace = "com.apollographql.compose"
@@ -32,14 +31,3 @@ dependencies {
   api(libs.apollo.normalized.cache)
 }
 
-// TODO remove when https://github.com/GradleUp/librarian/pull/21 is merged
-extensions.getByType(PublishingExtension::class.java).apply {
-  publications.register("default", MavenPublication::class.java) {
-    afterEvaluate {
-      this@register.from(components.getByName("release"))
-    }
-  }
-}
-tasks.withType(SourceJarTask::class.java) {
-  dependsOn("librarianGenerateVersion")
-}
